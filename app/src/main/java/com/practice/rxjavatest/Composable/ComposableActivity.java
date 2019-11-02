@@ -63,16 +63,14 @@ public class ComposableActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
-                        command.append(" onError : " + e.getMessage());
+                        command.append(" onErrorr : " + e.getMessage());
                         command.append("\n");
                     }
 
                     @Override
                     public void onComplete() {
-
                         command.append("on Complete");
                         command.append("\n");
-
                     }
                 }));
     }
