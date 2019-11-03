@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Composable.ComposableActivity"/>
+        <activity android:name=".FlowableActivity"/>
     </application>
 
 </manifest>

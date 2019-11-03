@@ -10,15 +10,15 @@ import com.practice.rxjavatest.Composable.ComposableActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-    private Button composablebBtn;
+    private Button composablebBtn, flowableBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         composablebBtn = findViewById(R.id.composable);
-        composablebBtn.setOnClickListener(v -> {
-            startActivity(new Intent(this, ComposableActivity.class));
-        });
+        flowableBtn = findViewById(R.id.flowable);
+        composablebBtn.setOnClickListener(v -> startActivity(new Intent(this, ComposableActivity.class)));
+        flowableBtn.setOnClickListener(v -> startActivity(new Intent(this, FlowableActivity.class)));
     }
 }
