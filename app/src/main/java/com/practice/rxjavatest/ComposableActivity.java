@@ -1,4 +1,4 @@
-package com.practice.rxjavatest.Composable;
+package com.practice.rxjavatest;
 
 import android.os.Bundle;
 import android.os.SystemClock;
