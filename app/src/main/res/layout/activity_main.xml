@@ -26,5 +26,25 @@
         app:layout_constraintLeft_toRightOf="@id/composable"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/completable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="completable"
+        app:layout_constraintLeft_toRightOf="@id/flowable"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="map"
+        app:layout_constraintLeft_toLeftOf="@id/composable"
+        app:layout_constraintTop_toBottomOf="@id/composable"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

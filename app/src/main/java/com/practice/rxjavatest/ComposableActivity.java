@@ -29,6 +29,7 @@ public class ComposableActivity extends AppCompatActivity {
     static Observable<String> sampleObservable() {
         //defer create observable each time you get a new observer
         //callable is a improvement of Runnable, callable is added in Java 1.5
+
         return Observable.defer(new Callable<ObservableSource<? extends String>>() {
             @Override
             public ObservableSource<? extends String> call() throws Exception {
