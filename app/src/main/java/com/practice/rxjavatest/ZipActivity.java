@@ -42,9 +42,9 @@ public class ZipActivity extends AppCompatActivity {
                  * third parameter in zip is BiFunctional that is an implementation of interface
                  * that have just one method (apply) so we can use Lambda here.
                  * On the other hand, because filterUseKotlinAndJava have been implemented in Utils
-                 * and income argument of apply are equal to filterUserLoveKotlinAndJava income
-                 * and output argument of apply are equal to filterUserLoveKotlinAndJava outcome
-                 * so we can user Method Reference
+                 * and input arguments of apply are equal to filterUserLoveKotlinAndJava input
+                 * and output arguments of apply are equal to filterUserLoveKotlinAndJava output
+                 * so we can use Method Reference
                  */
                 Utils::filterUserLoveKotlinAndJava)
                 .subscribeOn(Schedulers.io())
