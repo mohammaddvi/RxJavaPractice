@@ -25,14 +25,56 @@ public class Utils {
         apiUserList.add(apiUser2);
         return apiUserList;
     }
-    public static List<User> convertApiUserToUser(List<ApiUser> apiUsers){
+
+    public static List<User> convertApiUserToUser(List<ApiUser> apiUsers) {
         List<User> users = new ArrayList<>();
-        for (ApiUser apiUser :apiUsers){
+        for (ApiUser apiUser : apiUsers) {
             User user = new User();
             user.firstname = apiUser.firstname;
             user.lastname = apiUser.lastname;
             users.add(user);
         }
         return users;
+    }
+
+    public static List<User> javaFanUserList() {
+        List<User> users = new ArrayList<>();
+        User user = new User();
+        user.id = 1;
+        user.firstname = "mohammad";
+        user.lastname = "davari";
+        users.add(user);
+
+        User user1 = new User();
+        user1.id = 2;
+        user1.firstname = "mohammad";
+        user1.lastname = "amin";
+        users.add(user1);
+        return users;
+    }
+
+    public static List<User> kotlinFanOUserList() {
+        List<User> users = new ArrayList<>();
+        User user = new User();
+        user.id = 1;
+        user.firstname = "mohammad";
+        user.lastname = "davari";
+        users.add(user);
+
+        User user1 = new User();
+        user1.id = 3;
+        user1.firstname = "azad";
+        user1.lastname = "mohammadi";
+        users.add(user1);
+        return users;
+    }
+
+    public static List<User> filterUserLoveKotlinAndJava(List<User> javaFan, List<User> kotlinFan) {
+        List<User> bothLove = new ArrayList<>();
+        for (User user : javaFan)
+            for (User user1 : kotlinFan)
+                if (user.id == user1.id)
+                    bothLove.add(user);
+        return bothLove;
     }
 }

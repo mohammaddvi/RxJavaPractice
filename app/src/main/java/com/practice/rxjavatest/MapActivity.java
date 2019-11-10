@@ -49,7 +49,7 @@ public class MapActivity extends AppCompatActivity {
 
 
     //<? super List<User>> means that accept List<User> and any superclass.
-    //Question: difference <? super List<User>> and <? extend List<User>>?
+    //Question: difference <? super List<User>> and <? extend List<User>>
     private Observer<? super List<User>> getObserver() {
         return new Observer<List<User>>() {
             @Override
