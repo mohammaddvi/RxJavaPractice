@@ -42,8 +42,8 @@ public class ZipActivity extends AppCompatActivity {
                  * third parameter in zip is BiFunctional that is an implementation of interface
                  * that have just one method (apply) so we can use Lambda here.
                  * On the other hand, because filterUseKotlinAndJava have been implemented in Utils
-                 * and income argument of apply are equal with filterUserLoveKotlinAndJava income
-                 * and output argument of apply are equal with filterUserLoveKotlinAndJava outcome
+                 * and income argument of apply are equal to filterUserLoveKotlinAndJava income
+                 * and output argument of apply are equal to filterUserLoveKotlinAndJava outcome
                  * so we can user Method Reference
                  */
                 Utils::filterUserLoveKotlinAndJava)
