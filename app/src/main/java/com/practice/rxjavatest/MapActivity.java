@@ -18,7 +18,6 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 public class MapActivity extends AppCompatActivity {
@@ -35,19 +34,22 @@ public class MapActivity extends AppCompatActivity {
         mapBtn.setOnClickListener(v -> doSomeWorks());
     }
 
+    /*Map
+     *   transform the items emitted by an Observable by applying a function to each item
+     */
     private void doSomeWorks() {
         getObservable()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .map(new Function<List<ApiUser>, List<User>>() {
-                    @Override
-                    public List<User> apply(List<ApiUser> apiUsers) throws Exception {
-                        return Utils.convertApiUserToUser(apiUsers);
-                    }
-                })
+                // method reference in java :: with method reference we can pass a method as an
+                // argument of another method(ex:static method)
+                .map(Utils::convertApiUserToUser)
                 .subscribe(getObserver());
     }
 
+
+    //<? super List<User>> means that accept List<User> and any superclass.
+    //Question: difference <? super List<User>> and <? extend List<User>>?
     private Observer<? super List<User>> getObserver() {
         return new Observer<List<User>>() {
             @Override
