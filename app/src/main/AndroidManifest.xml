@@ -22,6 +22,7 @@
         <activity android:name=".CompletableActivity"/>
         <activity android:name=".MapActivity"/>
         <activity android:name=".ZipActivity"/>
+        <activity android:name=".BufferActivity"/>
     </application>
 
 </manifest>

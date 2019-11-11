@@ -42,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="map"
-        app:layout_constraintRight_toRightOf="@id/composable"
         app:layout_constraintLeft_toLeftOf="@id/composable"
+        app:layout_constraintRight_toRightOf="@id/composable"
         app:layout_constraintTop_toBottomOf="@id/composable" />
 
     <Button
@@ -56,6 +56,16 @@
         app:layout_constraintLeft_toRightOf="@id/map"
         app:layout_constraintStart_toStartOf="@+id/flowable"
         app:layout_constraintTop_toBottomOf="@id/flowable" />
+
+    <Button
+        android:id="@+id/buffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="buffer"
+        app:layout_constraintEnd_toEndOf="@+id/completable"
+        app:layout_constraintStart_toStartOf="@+id/completable"
+        app:layout_constraintTop_toBottomOf="@+id/completable" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
