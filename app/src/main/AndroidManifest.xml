@@ -23,6 +23,7 @@
         <activity android:name=".MapActivity"/>
         <activity android:name=".ZipActivity"/>
         <activity android:name=".BufferActivity"/>
+        <activity android:name=".TakeActivity"/>
     </application>
 
 </manifest>

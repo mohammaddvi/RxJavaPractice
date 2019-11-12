@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-    private Button composablebBtn, flowableBtn, completableBtn, mapBtn, zipBtn, bufferBtn;
+    private Button composablebBtn, flowableBtn, completableBtn, mapBtn, zipBtn, bufferBtn, takeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
         completableBtn = findViewById(R.id.completable);
         zipBtn = findViewById(R.id.zip);
         bufferBtn = findViewById(R.id.buffer);
+        takeBtn = findViewById(R.id.take);
         composablebBtn.setOnClickListener(v -> startActivity(new Intent(this, ComposableActivity.class)));
         flowableBtn.setOnClickListener(v -> startActivity(new Intent(this, FlowableActivity.class)));
         completableBtn.setOnClickListener(v -> startActivity(new Intent(this, CompletableActivity.class)));
         mapBtn.setOnClickListener(v -> startActivity(new Intent(this, MapActivity.class)));
         zipBtn.setOnClickListener(v -> startActivity(new Intent(this, ZipActivity.class)));
         bufferBtn.setOnClickListener(v -> startActivity(new Intent(this, BufferActivity.class)));
+        takeBtn.setOnClickListener(v -> startActivity(new Intent(this, TakeActivity.class)));
     }
 }

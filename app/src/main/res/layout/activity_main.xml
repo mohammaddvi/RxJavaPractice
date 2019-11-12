@@ -66,6 +66,15 @@
         app:layout_constraintEnd_toEndOf="@+id/completable"
         app:layout_constraintStart_toStartOf="@+id/completable"
         app:layout_constraintTop_toBottomOf="@+id/completable" />
+    <Button
+        android:id="@+id/take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="take"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
