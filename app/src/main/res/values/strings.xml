@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Rxjava test</string>
+    <string name="enter_a_valid_email_below">Email</string>
+    <string name="password_than_8_chrs">Password</string>
+    <string name="submit">submit</string>
+    <string name="number_between_1_amp_100">50</string>
+    <string name="msg_demo_form_comb_latest">Form Validation</string>
 </resources>
